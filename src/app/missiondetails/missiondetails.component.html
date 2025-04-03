@@ -1,0 +1,70 @@
+<div class="wrapper">
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a routerLink="/" class="navbar-brand">Miguel's Space Explorer</a>
+      <div class="navbar-buttons">
+        <a routerLink="/" class="back-button">Mission Control</a>
+        <a routerLink="/filter" class="filter-button">Advanced Search</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="content">
+    <div class="page-container">
+      <header class="page-header">
+        <h1>Mission Intelligence Report</h1>
+      </header>
+
+      <div class="mission-details-card">
+        <div class="above_content">
+          <div class="image">
+            <img
+              src="{{ singleMission.links.mission_patch_small }}"
+              alt="{{ singleMission.rocket.rocket_name }}"
+            />
+          </div>
+          <div class="mission_info">
+            <h2>{{ singleMission.mission_name }}</h2>
+            <p><strong>Mission ID:</strong> {{ singleMission.mission_name }}</p>
+            <p><strong>Deployment Year:</strong> {{ singleMission.launch_year }}</p>
+            
+            <h2>Spacecraft Data</h2>
+            <p><strong>Vehicle:</strong> {{ singleMission.rocket.rocket_name }}</p>
+            <p><strong>Classification:</strong> {{ singleMission.rocket.rocket_type }}</p>
+            
+            <h2>Launch Coordinates</h2>
+            <p>
+              <strong>Facility:</strong>
+              {{ singleMission.launch_site.site_name_long }}
+            </p>
+          </div>
+        </div>
+
+        <div class="under_content">
+          <h2>Mission Briefing</h2>
+          <p>{{ singleMission.details }}</p>
+          
+          <h2>External Intelligence</h2>
+          <div class="icon">
+            <a href="{{ singleMission.links.article_link }}" target="_blank" title="Read Article">
+              <mat-icon>newspaper</mat-icon>
+            </a>
+            <a href="{{ singleMission.links.video_link }}" target="_blank" title="Watch Video">
+              <mat-icon>videocam</mat-icon>
+            </a>
+            <a href="{{ singleMission.links.wikipedia }}" target="_blank" title="Wikipedia">
+              <mat-icon>public</mat-icon>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="page-footer">
+    <p>© {{ currentYear }}  Designed By 101449899</p>
+  </footer>
+</div>
