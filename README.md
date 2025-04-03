@@ -18,3 +18,5 @@ Angular: A framework for building single-page applications.
 SpaceX API: Fetches live data about SpaceX missions and launches.
 
 HTML/CSS: For structuring and styling the app.
+
+code:![Iamge ALt](https://github.com/MigueGs/101449899_labtest2/blob/05d36ca622d33b6d6e179cc589e9e2bb2c457b8c/imagen%201%20.png)
