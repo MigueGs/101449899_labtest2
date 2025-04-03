@@ -20,3 +20,5 @@ SpaceX API: Fetches live data about SpaceX missions and launches.
 HTML/CSS: For structuring and styling the app.
 
 code:![Iamge ALt](https://github.com/MigueGs/101449899_labtest2/blob/05d36ca622d33b6d6e179cc589e9e2bb2c457b8c/imagen%201%20.png)
+
+Code:![iamge ALt](https://github.com/MigueGs/101449899_labtest2/blob/29d70428622daf43db4a966724d9cf7cf1902f73/imagen%202.png)
